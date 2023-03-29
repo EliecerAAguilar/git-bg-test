@@ -27,5 +27,7 @@ maneja los repositorios remotos
 ## - git reverse <commit-id>
 regresa a un punto anterior a la historia de commits de la rama actual. los cambios de los commits que estan despues del commit especificado se mueven a la stagging area
 
-## - git reset [--soft | --hard]
-
+## - git reset [--soft | --hard] <commit-id/hash>
+- regresas a un punto anterior especficado; todo los commit posteriores a ese punto son descartados
+- la bandera 'soft' hace que cuando se desee realizar un commit de los cambios se tenga que hacer un merge y git conoce que habian ciertos cambios en la rama.
+- la bandera 'hard' a diferencia de 'soft' hace que los cambios no sean recordados por git.
